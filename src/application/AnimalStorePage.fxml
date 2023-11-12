@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnimalStorePage">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="778.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/AnimalStore.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="chicken" layoutX="109.0" layoutY="186.0" mnemonicParsing="false" onAction="#buyAnimalFromStore" text="Buy Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cow" layoutX="462.0" layoutY="186.0" mnemonicParsing="false" onAction="#buyAnimalFromStore" text="Buy Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="#40652e" layoutX="140.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="518.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cow" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="20.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
+      <Label fx:id="moneyLabel" layoutX="27.0" layoutY="20.0" text="Money :">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="cityPageButton" layoutX="625.0" layoutY="16.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="&lt;- Back to the city">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="#40652e" layoutX="57.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost : 120 " textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="58.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken is a protein-rich meat that's affordable, easy to cook, and can be used in various dishes worldwide." wrappingWidth="191.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="chickenOwnLabel" layoutX="58.0" layoutY="233.0" text="Own:" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fill="#40652e" layoutX="414.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost : 300 " textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="414.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cow is a domesticated mammal that's commonly raised for meat, dairy, and other byproducts like leather and fertilizer." wrappingWidth="191.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="cowOwnLabel" layoutX="415.0" layoutY="233.0" text="Own:" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fill="#40652e" layoutX="58.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The remarkable chicken will diligently lay an egg and astoundingly, in just 2 days, it can be sold to eager customers for 30 units of money." wrappingWidth="239.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="78.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special:" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="414.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Within 3 days, a cow can produce fresh milk that can be sold to customers for 80 units of money." wrappingWidth="239.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="427.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special:" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="chicken" layoutX="188.0" layoutY="186.0" mnemonicParsing="false" onAction="#sellAnimalToStore" text="Sell Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cow" layoutX="534.0" layoutY="186.0" mnemonicParsing="false" onAction="#sellAnimalToStore" text="Sell Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="warningText" fill="#793d29" layoutX="68.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have exceeded the animal capacity. Consider selling some of them to the store." textAlignment="CENTER" visible="false" wrappingWidth="614.9267578125">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

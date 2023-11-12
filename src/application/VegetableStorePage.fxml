@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VegetableStorePage">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="778.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/VegetableStore.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Pumpkin" layoutX="75.0" layoutY="184.0" mnemonicParsing="false" onAction="#buyVegetableFromStore" text="Buy Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Potato" layoutX="257.0" layoutY="186.0" mnemonicParsing="false" onAction="#buyVegetableFromStore" text="Buy Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Lime" layoutX="439.0" layoutY="183.0" mnemonicParsing="false" onAction="#buyVegetableFromStore" text="Buy Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Orange" layoutX="616.0" layoutY="183.0" mnemonicParsing="false" onAction="#buyVegetableFromStore" text="Buy Now">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Text fill="#40652e" layoutX="70.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pumpkin" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#c5ebb3" layoutX="205.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="257.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potato" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="448.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lime" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="615.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orange" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="69.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost : 120 " textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="52.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pumpkin is a versatile and nutritious seasonal food. Sold for 250 units of money." wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="54.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has a chance of free additional growth and can be recover" wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="68.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special:" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="243.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost : 50" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="231.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potato is a nutrient-dense vegetable, cooked and eaten in many ways. Sold for 80 units of money" wrappingWidth="103.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="235.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="None" wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="249.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special:" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="421.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost : 75 " textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="413.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lime is a small, tangy citrus fruit used in cooking and drinks. Sold for 150 units of money" wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="413.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has a chance of free additional growth" wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="427.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special:" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="602.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost : 60 " textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="591.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orange is a sweet and juicy citrus fruit, rich in vitamin C. Sold for 100 units of money" wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="600.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Can be recover" wrappingWidth="96.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="614.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special:" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="25.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
+      <Label fx:id="moneyLabel" layoutX="32.0" layoutY="23.0" text="Money :">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="pumpkinOwnLabel" layoutX="56.0" layoutY="231.0" text="Own:" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="potatoOwnLabel" layoutX="231.0" layoutY="232.0" text="Own:" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="limeOwnLabel" layoutX="413.0" layoutY="232.0" text="Own:" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="orangeOwnLabel" layoutX="595.0" layoutY="232.0" text="Own:" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="cityPageButton" layoutX="625.0" layoutY="16.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="&lt;- Back to the city">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="plantEncyclopediaPageButton" layoutX="470.0" layoutY="16.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="Open Plant Encyclopedia">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="58.0" fitWidth="61.0" layoutX="616.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Orange.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="436.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Lime.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="258.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Potato.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="66.0" layoutX="81.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Pumpkin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

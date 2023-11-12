@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayerFarmPage">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="761.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/PlayerFarm.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="ambient" arcHeight="5.0" arcWidth="5.0" fill="#b19e8b29" height="514.0" layoutX="-1.0" stroke="#242323" strokeType="INSIDE" width="761.0" />
+      <Button fx:id="mainMenuPageButton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="Menu">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="cityPageButton" layoutX="690.0" layoutY="171.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="-&gt; City">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="72.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
+      <Label fx:id="moneyLabel" layoutX="79.0" layoutY="24.0" text="Money :">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font></Label>
+      <GridPane fx:id="farmPlot0" layoutX="345.0" layoutY="267.0" prefHeight="61.0" prefWidth="62.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="animalPlot" layoutX="29.0" layoutY="251.0" prefHeight="219.0" prefWidth="182.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="farmPlot1" layoutX="452.0" layoutY="267.0" prefHeight="61.0" prefWidth="62.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="farmPlot2" layoutX="552.0" layoutY="267.0" prefHeight="61.0" prefWidth="62.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="farmPlot3" layoutX="347.0" layoutY="393.0" prefHeight="61.0" prefWidth="62.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="farmPlot4" layoutX="450.0" layoutY="393.0" prefHeight="61.0" prefWidth="62.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="farmPlot5" layoutX="552.0" layoutY="393.0" prefHeight="61.0" prefWidth="62.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="farmPlot_0" layoutX="366.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToSelectedFarmPlot" text="1">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="farmPlot_1" layoutX="471.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToSelectedFarmPlot" text="2">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="farmPlot_2" layoutX="571.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToSelectedFarmPlot" text="3">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="farmPlot_3" layoutX="366.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToSelectedFarmPlot" text="4">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="farmPlot_4" layoutX="471.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToSelectedFarmPlot" text="5">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="farmPlot_5" layoutX="571.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToSelectedFarmPlot" text="6">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="680.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+      <Label fx:id="dayLabel" layoutX="687.0" layoutY="24.0" text="Day :">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="endTheDay" layoutX="232.0" layoutY="112.0" mnemonicParsing="false" onAction="#EndTheDay" text="END THE DAY">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="575.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
+      <Label fx:id="timeLabel" layoutX="583.0" layoutY="24.0" text="Time :">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="animalFarmPageButton" layoutX="93.0" layoutY="278.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="Animal">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

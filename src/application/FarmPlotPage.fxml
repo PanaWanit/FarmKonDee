@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FarmPlantPage">
+   <children>
+      <ImageView fitHeight="522.0" fitWidth="759.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/AnimalBlock.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="warningText" fill="#793d29" layoutX="26.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have exceeded your working capacity. Consider going to sleep." textAlignment="CENTER" visible="false" wrappingWidth="707.0">
+         <font>
+            <Font name="Britannic Bold" size="19.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="ambient" arcHeight="5.0" arcWidth="5.0" fill="#b19e8b29" height="514.0" layoutX="-5.0" layoutY="-4.0" stroke="#242323" strokeType="INSIDE" width="761.0" />
+      <Button fx:id="playerFarmPageButton" layoutX="615.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="&lt;- Back to the farm">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="26.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="101.0" />
+      <GridPane fx:id="plantGridPane" gridLinesVisible="true" layoutX="39.0" layoutY="49.0" prefHeight="405.0" prefWidth="671.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane fx:id="plotLocation0_0" onMouseClicked="#farmingAction" prefHeight="144.0" prefWidth="227.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_0" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_08" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation1_0" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_1" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_081" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation2_0" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_01" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0817" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation0_1" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_02" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0816" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation1_1" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_03" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0815" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation2_1" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_04" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0814" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation0_2" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_05" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0811" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation1_2" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_06" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0812" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane fx:id="plotLocation2_2" onMouseClicked="#farmingAction" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="plantHealth0_07" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="10.0" right="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="plantHealth0_0813" alignment="TOP_LEFT" contentDisplay="BOTTOM" nodeOrientation="LEFT_TO_RIGHT" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" right="-50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+      <Label fx:id="timeLabel" layoutX="34.0" layoutY="19.0" text="Time :">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="itemGridPane" layoutX="222.0" layoutY="14.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.33331298828125" minWidth="10.0" prefWidth="52.6666259765625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.3333740234375" minWidth="10.0" prefWidth="50.000015258789055" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.9999847412109" minWidth="10.0" prefWidth="52.6667022705078" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.3332977294922" minWidth="10.0" prefWidth="52.66664632161459" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.66668701171875" minWidth="10.0" prefWidth="49.333414713541686" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.6667175292969" minWidth="10.0" prefWidth="56.000040690104186" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane onMouseClicked="#selectVegetableToPlant" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fx:id="pumpkinBackground" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <ImageView fx:id="pumpkin" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="images/vegetable/Pumpkin.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="pumpkinOwnLabel" text="Own:" textFill="#cdaa40" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane onMouseClicked="#selectVegetableToPlant" prefHeight="53.0" prefWidth="78.0" GridPane.columnIndex="1">
+               <children>
+                  <Rectangle fx:id="potatoBackground" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <ImageView fx:id="potato" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="images/vegetable/Potato.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="potatoOwnLabel" text="Own:" textFill="#cdaa40" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane onMouseClicked="#selectVegetableToPlant" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Rectangle fx:id="limeBackground" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <ImageView fx:id="lime" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="images/vegetable/Lime.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="limeOwnLabel" text="Own:" textFill="#cdaa40" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane onMouseClicked="#selectVegetableToPlant" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <Rectangle fx:id="tomatoBackground" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <ImageView fx:id="orange" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="images/vegetable/Orange.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="orangeOwnLabel" text="Own:" textFill="#cdaa40" StackPane.alignment="BOTTOM_CENTER">
+                     <font>
+                        <Font name="Britannic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </StackPane>
+            <StackPane onMouseClicked="#selectToolToUse" prefHeight="53.0" prefWidth="300.0" GridPane.columnIndex="4">
+               <children>
+                  <Rectangle fx:id="wateringPotBackground" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <ImageView fx:id="wateringPot" fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="images/tool/WateringPot.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane onMouseClicked="#selectToolToUse" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5">
+               <children>
+                  <Rectangle fx:id="sickleBackground" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <ImageView fx:id="sickle" fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="images/tool/Sickle.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

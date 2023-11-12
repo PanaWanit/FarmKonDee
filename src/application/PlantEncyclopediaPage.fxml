@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlantEncyclopediaPage">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="759.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/AnimalBlock.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="vegetableStorePageButton" layoutX="583.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchSceneEventHandler" text="&lt;- Back to the Plant Store">
+         <font>
+            <Font name="Britannic Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="109.0" fitWidth="64.0" layoutX="477.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Lime.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="64.0" layoutX="176.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Pumpkin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="64.0" layoutX="85.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/Orange.png" />
+         </image>
+      </ImageView>
+      <Text fill="#40652e" layoutX="79.0" layoutY="195.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The ability called &quot;Recoverable&quot; allows a plant that has already died to be revived when watered, restoring it to a state of 1 health point and allowing it to continue living." wrappingWidth="239.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="117.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recoverable" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="436.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GrowthChance" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#40652e" layoutX="199.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recoverable &amp; GrowthChance" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="23.0" />
+         </font>
+      </Text>
+      <Label layoutX="100.0" layoutY="157.0" text="Orange" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="493.0" layoutY="157.0" text="Lime" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="423.0" text="Pumpkin" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fill="#40652e" layoutX="397.0" layoutY="196.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The ability called &quot;Growth Chance&quot; grants a specific plant the opportunity to gain an additional growth point when it is watered." wrappingWidth="239.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Line endX="54.666656494140625" endY="188.33334350585938" layoutX="295.0" layoutY="117.0" startX="-94.66664123535156" startY="139.0" stroke="#454835" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="4.0" />
+      <Line endX="44.666656494140625" endY="178.33334350585938" layoutX="305.0" layoutY="127.0" startX="166.66665649414062" startY="119.66667175292969" stroke="#454835" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="4.0" />
+      <Text fill="#40652e" layoutX="268.0" layoutY="365.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The tomato plant has two abilities: &quot;Growth Chance&quot; enables it to gain additional growth points when watered, while &quot;Recoverable&quot; allows it to revive with 1 health point if it dies and receives water, allowing it to continue growing." wrappingWidth="379.04248046875">
+         <font>
+            <Font name="Britannic Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="109.0" fitWidth="64.0" layoutX="195.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="images/vegetable/DeadBush.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="191.0" layoutY="157.0" text="Dead Plant" textFill="#e8dbb4">
+         <font>
+            <Font name="Britannic Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
