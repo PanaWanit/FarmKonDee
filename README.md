@@ -4,4 +4,4 @@ FarmKonDee is a 2D farming simulator game.
 
 ## Authors
 - [PanaWanit](https://github.com/PanaWanit)
--  [WhiteGabeDog](https://github.com/WhiteGabeDog)
+- [Nontanun Au.](https://github.com/WhiteGabeDog)
